@@ -19,5 +19,10 @@ python3 -m venv venv;source venv/bin/activate
 ```bash
 pip install -r requirements
 ```
-## [License]
+
+- All-in-one command
+```
+curl https://gist.githubusercontent.com/UltiRequiem/1c010d74971c417b92c82c959f53f275/raw/dfeef4d5b7829f4589afd70b87837b74b912e6da/srcipt.sh | bash
+```
+## License
 [BSD 3-Clause License](./LICENSE)
