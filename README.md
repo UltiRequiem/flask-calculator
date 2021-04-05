@@ -1,4 +1,4 @@
-[![image](https://user-images.githubusercontent.com/71897736/113532171-9352e280-957f-11eb-95f8-87c42af3f60a.png)](https://flask-calculator.ultirequiem.repl.co)
+[![image](https://user-images.githubusercontent.com/71897736/113590421-794cea80-95e7-11eb-8184-9aedad42131b.png)](https://flask-calculator.ultirequiem.repl.co)
 # A Webapp Calculator made with Flask
 A simple calculator made with Flask.
 
