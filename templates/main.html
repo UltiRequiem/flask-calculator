@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Flask Calculator</title>
+</head>
+
+<body>
+  <h1>Flask Calculator App</h1>
+
+  <form action="/calculate" method="POST">
+
+    <label for="Number One">First Number</label>
+    <input type="text" placeholder="First Number" name="number_one" />
+
+    <label for="Number Two">Second Number</label>
+    <input type="text" placeholder="Second Number" name="number_two" />
+
+    <label for="Operation">Operation</label>
+    <select name="operation">
+      <option value="add">Add</option>
+      <option value="subtract">Subtract</option>
+      <option value="multiply">Multiply</option>
+      <option value="divide">Divide</option>
+    </select>
+
+
+    <input type="submit" value="Calculate" id="calc_btn" class="btn" />
+
+    <h3>The result is: {{ result }}</h3>
+
+
+  </form>
+
+
+</body>
+
+</html>
