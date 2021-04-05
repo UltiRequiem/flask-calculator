@@ -3,18 +3,20 @@
 
 <head>
   <title>Flask Calculator</title>
+<link rel="stylesheet" href={{url_for('static',filename='main.css')}}>
 </head>
 
 <body>
-  <h1>Flask Calculator App</h1>
+  <section class="calculator">
+      <h1>Flask Calculator App</h1>
 
   <form action="/calculate" method="POST">
 
     <label for="Number One">First Number</label>
-    <input type="text" placeholder="First Number" name="number_one" />
+    <input type="number" placeholder="First Number" name="number_one"/>
 
     <label for="Number Two">Second Number</label>
-    <input type="text" placeholder="Second Number" name="number_two" />
+    <input type="number" placeholder="Second Number" name="number_two"/>
 
     <label for="Operation">Operation</label>
     <select name="operation">
@@ -27,10 +29,13 @@
 
     <input type="submit" value="Calculate" id="calc_btn" class="btn" />
 
-    <h3>The result is: {{ result }}</h3>
+    <h3 class="demo">The result is: {{ result }}</h3>
 
 
   </form>
+  </section>
+
+
 
 
 </body>
