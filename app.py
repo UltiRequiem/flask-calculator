@@ -4,7 +4,7 @@ from keep_alive import keep_alive, app
 
 @app.route('/')
 def main():
-    return render_template("main.html")
+    return render_template("calculator.html")
 
 
 @app.route("/calculate", methods=['POST'])
@@ -15,22 +15,22 @@ def calculate():
 
     if operation == 'add':
         result = float(number_one) + float(number_two)
-        return render_template('main.html', result=result)
+        return render_template('calculator.html', result=result)
 
     elif operation == 'subtract':
         result = float(number_one) - float(number_two)
-        return render_template('main.html', result=result)
+        return render_template('calculator.html', result=result)
 
     elif operation == 'multiply':
         result = float(number_one) * float(number_two)
-        return render_template('main.html', result=result)
+        return render_template('calculator.html', result=result)
 
     elif operation == 'divide':
         result = float(number_one) / float(number_two)
-        return render_template('main.html', result=result)
+        return render_template('calculator.html', result=result)
 
     else:
-        return render_template('main.html')
+        return render_template('calculator.html')
 
 
 @app.errorhandler(404)
