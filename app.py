@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import render_template, request
 from keep_alive import keep_alive, app
 
 @app.route('/')
