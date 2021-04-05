@@ -3,8 +3,8 @@
 A simple calculator made with Flask.
 
 ## Demo
-
 Here is a working live demo: https://flask-calculator.ultirequiem.repl.co
+It runs in [Repl.it](https://repl.it).
 
 ## Development setup
 1. Clone the proyect
@@ -13,7 +13,7 @@ git clone https://github.com/UltiRequiem/flask-calculator.git ; cd flask-calcula
 ```
 2. Create a virtual environment
 ```bash
-python3 -m venv venv;source venv/bin/activate
+python3 -m venv env;source env/bin/activate
 ```
 3. Install the dependencies
 ```bash
