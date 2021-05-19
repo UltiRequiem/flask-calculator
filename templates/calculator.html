@@ -3,12 +3,12 @@
 
 <head>
   <title>Flask Calculator</title>
-<link rel="stylesheet" href="./../static/main.css">
+<link rel="stylesheet" href={{url_for('static',filename='main.css')}}>
 </head>
 
 <body>
   <section class="calculator">
-      <h1 class="text">Calculadora del Futuro</h1>
+      <h1 class="text">Calculator App</h1>
 
   <form action="/calculate" method="POST">
 
@@ -29,7 +29,7 @@
 
     <input class="text" type="submit" value="Calculate" id="calc_btn" class="btn" />
 
-    <h3 class="text">The result is:</h3>
+    <h3 class="text">The result is: {{ result }}</h3>
 
   </form>
   </section>
