@@ -1,13 +1,24 @@
  @import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,700,900');
 body {
   width : 100%;
-  height : 750px;
+  height : 500px;
   display: flex;
   flex-direction : column;
   justify-content: center;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
-  background-color: #ebedef;
+  background-color: black;
   padding: 0;
   margin: 0;
+}
+
+.calculator{
+    border: 20px white solid;
+    padding: 30px;
+    border-radius: 10px;
+    border-style: outset;
+}
+
+.text{
+    color: white;
 }
