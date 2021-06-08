@@ -1,43 +1,38 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>Flask Calculator</title>
+    <link rel="stylesheet" href={{url_for('static',filename='main.css')
+    }}>
+  </head>
 
-<head>
-  <title>Flask Calculator</title>
-<link rel="stylesheet" href={{url_for('static',filename='main.css')}}>
-</head>
-
-<body>
-  <section class="calculator">
+  <body>
+    <section class="calculator">
       <h1>Flask Calculator App</h1>
 
-  <form action="/calculate" method="POST">
+      <form action="/calculate" method="POST">
+        <label for="Number One">First Number</label>
+        <input type="number" placeholder="First Number" name="number_one" />
 
-    <label for="Number One">First Number</label>
-    <input type="number" placeholder="First Number" name="number_one"/>
+        <label for="Number Two">Second Number</label>
+        <input type="number" placeholder="Second Number" name="number_two" />
 
-    <label for="Number Two">Second Number</label>
-    <input type="number" placeholder="Second Number" name="number_two"/>
+        <label for="Operation">Operation</label>
+        <select name="operation">
+          <option value="add">Add</option>
+          <option value="subtract">Subtract</option>
+          <option value="multiply">Multiply</option>
+          <option value="divide">Divide</option>
+        </select>
 
-    <label for="Operation">Operation</label>
-    <select name="operation">
-      <option value="add">Add</option>
-      <option value="subtract">Subtract</option>
-      <option value="multiply">Multiply</option>
-      <option value="divide">Divide</option>
-    </select>
+        <input type="submit" value="Calculate" id="calc_btn" class="btn" />
 
+        <h3>The result is: {{ result }}</h3>
+      </form>
+    </section>
 
-    <input type="submit" value="Calculate" id="calc_btn" class="btn" />
-
-    <h3>The result is: {{ result }}</h3>
-
-  </form>
-  </section>
-
-<footer>
- © 2021 <a href="https://github.com/UltiRequiem">Eliaz Bobadilla</a>
-</footer>
-
-</body>
-
+    <footer>
+      © 2021 <a href="https://github.com/UltiRequiem">Eliaz Bobadilla</a>
+    </footer>
+  </body>
 </html>
