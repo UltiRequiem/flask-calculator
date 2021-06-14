@@ -33,7 +33,7 @@ python3 -m venv env;source env/bin/activate
 3. Install the dependencies
 
 ```bash
-pip install -r requirements
+pip install -r requirements.txt
 ```
 
 - All-in-one command
