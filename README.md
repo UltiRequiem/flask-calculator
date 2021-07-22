@@ -38,7 +38,7 @@ pip install -r requirements.txt
 
 - All-in-one command
 
-```
+```bash
 curl https://gist.githubusercontent.com/UltiRequiem/1c010d74971c417b92c82c959f53f275/raw/dfeef4d5b7829f4589afd70b87837b74b912e6da/srcipt.sh | bash
 ```
 
