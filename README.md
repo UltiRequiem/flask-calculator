@@ -13,7 +13,7 @@ A simple calculator made with Flask.
 ## Demo
 
 Here is a working live demo: https://flask-calculator.ultirequiem.repl.co
-It runs in [Repl.it](https://repl.it).
+it runs in [Repl.it](https://repl.it).
 
 ## Development setup
 
