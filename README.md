@@ -1,3 +1,7 @@
+# Flask WebApp Calc
+
+A simple calculator made with Flask.
+
 [![image](https://user-images.githubusercontent.com/71897736/113590421-794cea80-95e7-11eb-8184-9aedad42131b.png)](https://flask-calculator.ultirequiem.repl.co)
 
 [![Mit License Icon](https://black.readthedocs.io/en/stable/_static/license.svg)](https://github.com/UltiRequiem/flask-calculator/blob/main/LICENSE)
@@ -5,10 +9,6 @@
 [![Total Lines](https://img.shields.io/tokei/lines/github.com/UltiRequiem/flask-calculator?color=blue&label=Total%20Lines)](https://github.com/UltiRequiem/flask-calculator)
 ![CodeQL](https://github.com/UltiRequiem/flask-calculator/workflows/CodeQL/badge.svg)
 ![Repo Size](https://img.shields.io/github/repo-size/ultirequiem/flask-calculator?style=flat-square&label=Repo)
-
-# A Webapp Calculator made with Flask
-
-A simple calculator made with Flask.
 
 ## Demo
 
