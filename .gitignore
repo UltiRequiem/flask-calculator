@@ -1,4 +1,5 @@
 *.pyo
 *.pyc
 *cfg
-env/
+**/env/
+**/__pycache__/
