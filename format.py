@@ -1,6 +1,6 @@
 from os import system
 
-files = ["app.py", "keep_alive.py"]
+files = ["application.py", "keep_alive.py"]
 
 
 def format():

@@ -1,13 +1,13 @@
 from flask import render_template, request
-from keep_alive import keep_alive, app
+from keep_alive import keep_alive, application
 
 
-@app.route("/")
+@application.route("/")
 def main():
     return render_template("calculator.html")
 
 
-@app.route("/calculate", methods=["POST"])
+@application.route("/calculate", methods=["POST"])
 def calculate():
     number_one = request.form["number_one"]
     number_two = request.form["number_two"]
@@ -33,12 +33,12 @@ def calculate():
         return render_template("calculator.html")
 
 
-@app.errorhandler(404)
+@application.errorhandler(404)
 def not_found(error):
     return render_template("404.html", error=error)
 
 
-@app.errorhandler(500)
+@application.errorhandler(500)
 def server_error(error):
     return render_template("500.html", error=error)
 
