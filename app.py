@@ -11,22 +11,23 @@ def main():
 def calculate():
     number_one = request.form["number_one"]
     number_two = request.form["number_two"]
+    number_three = request.form["number_three"]
     operation = request.form["operation"]
 
     if operation == "add":
-        result = float(number_one) + float(number_two)
+        result = float(number_one) + float(number_two) + float(number_three)
         return render_template("calculator.html", result=result)
 
     elif operation == "subtract":
-        result = float(number_one) - float(number_two)
+        result = float(number_one) - float(number_two) - float(number_three)
         return render_template("calculator.html", result=result)
 
     elif operation == "multiply":
-        result = float(number_one) * float(number_two)
+        result = float(number_one) * float(number_two) * float(number_three)
         return render_template("calculator.html", result=result)
 
     elif operation == "divide":
-        result = float(number_one) / float(number_two)
+        result = float(number_one) / float(number_two) / float(number_three)
         return render_template("calculator.html", result=result)
 
     else:
