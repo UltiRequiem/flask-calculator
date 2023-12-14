@@ -1,34 +1,36 @@
-from selenium import webdriver
-import time
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
-from selenium.webdriver.chrome.options import Options
+# Divide any number with 0. However, this case has not been handled in the code
 
-# Define Chrome WebDriver options
-chrome_options = Options()
-service = Service('/Users/mac005/Downloads/chromedriver-mac-arm64/chromedriver')
+# from selenium import webdriver
+# import time
+# from selenium.webdriver.chrome.service import Service
+# from selenium.webdriver.common.by import By
+# from selenium.webdriver.common.keys import Keys
+# from selenium.webdriver.chrome.options import Options
 
-# Initialize Chrome WebDriver
-driver = webdriver.Chrome(service=service, options=chrome_options)
+# # Define Chrome WebDriver options
+# chrome_options = Options()
+# service = Service('/Users/mac005/Downloads/chromedriver-mac-arm64/chromedriver')
 
-# Open the Flask application
-driver.get('http://192.168.105.23:3000')  
+# # Initialize Chrome WebDriver
+# driver = webdriver.Chrome(service=service, options=chrome_options)
 
-number1 = driver.find_element(By.NAME, 'number_one')
-number2 = driver.find_element(By.NAME, 'number_two')
-operator = driver.find_element(By.NAME, 'operation')
-submit = driver.find_element(By.ID, 'calc_btn')
+# # Open the Flask application
+# driver.get('http://192.168.105.23:3000')  
 
-number1.send_keys(12)
-number2.send_keys(0)
-operator.send_keys('divide')
+# number1 = driver.find_element(By.NAME, 'number_one')
+# number2 = driver.find_element(By.NAME, 'number_two')
+# operator = driver.find_element(By.NAME, 'operation')
+# submit = driver.find_element(By.ID, 'calc_btn')
 
-submit.click()
+# number1.send_keys(12)
+# number2.send_keys(0)
+# operator.send_keys('divide')
 
-time.sleep(3)
+# submit.click()
 
-result = driver.find_element(By.CSS_SELECTOR, 'h3')
-print("Result is: ", result.text)
+# time.sleep(3)
 
-driver.close()
+# result = driver.find_element(By.CSS_SELECTOR, 'h3')
+# print("Result is: ", result.text)
+
+# driver.close()
