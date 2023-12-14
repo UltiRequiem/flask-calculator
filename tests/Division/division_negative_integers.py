@@ -11,6 +11,7 @@ service = Service('/Users/mac005/Downloads/chromedriver-mac-arm64/chromedriver')
 
 # Initialize Chrome WebDriver
 driver = webdriver.Chrome(service=service, options=chrome_options)
+
 # Open the Flask application
 driver.get('http://192.168.105.23:3000')  
 
