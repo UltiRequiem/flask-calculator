@@ -30,3 +30,4 @@ assert 'Selenium WebDriver' in driver.title
 
 # Close the browser
 driver.quit()
+
