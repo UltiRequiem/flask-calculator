@@ -1,0 +1,36 @@
+from selenium import webdriver
+import time
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.chrome.options import Options
+
+# Define Chrome WebDriver options
+chrome_options = Options()
+service = Service('/Users/mac005/Downloads/chromedriver-mac-arm64/chromedriver')
+
+# Initialize Chrome WebDriver
+driver = webdriver.Chrome(service=service, options=chrome_options)
+# Open the Flask application
+driver.get('http://192.168.105.23:3000')  
+
+number1 = driver.find_element(By.NAME, 'number_one')
+number2 = driver.find_element(By.NAME, 'number_two')
+operation = driver.find_element(By.NAME, 'operation')
+submit_button = driver.find_element(By.ID, 'calc_btn')
+
+number1.send_keys(10)
+number2.send_keys(4)
+operation.send_keys('multiply')
+
+submit_button.click()
+
+# Wait for the result (let's say for 3 seconds)
+time.sleep(3)
+
+# Get the result element and print the text (replace 'result_id' with your actual result element ID)
+result_element = driver.find_element(By.CSS_SELECTOR, 'h3')
+print('Result of multiplication:', result_element.text)
+
+driver.close()
+
