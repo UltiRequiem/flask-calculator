@@ -17,7 +17,7 @@ it runs in [Repl.it](https://repl.it).
 
 ## Development setup
 
-1. Clone the proyect
+1. Clone the project
 
 ```bash
 git clone https://github.com/UltiRequiem/flask-calculator.git ; cd flask-calculator
